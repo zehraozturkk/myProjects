@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(19, 104, 104);
+    color: white;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Mynerve', cursive;
+    font-size: 24px;
+}
+
+
+.container{
+    padding: 20px;
+    height: 450px;
+    width: 450px;
+    position: relative;
+}
+
+.graphic{
+    fill: transparent; /*arka planın rengini aldık*/
+    stroke: #fff; /*çizginin rengi*/
+    stroke-width: 4px ;
+}
+
+/* we hide hangman */
+.item{ 
+    /* display: none; */
+}
+
+#wrong-letters{
+    position: absolute;   
+    top: 30px;
+    right: 30px;
+    
+}
+
+#word{
+    display: flex;
+    position: absolute;
+    bottom: 8px; /* positionu relative olandan itibaren  10px (bottom dediğimiz için)aşşağı kısmına göre konumlanıt */
+    left: 50%;
+}
+
+.letter{
+    border-bottom: 4px solid #FF7000;
+    font-size: 38px ;
+    margin: 0 3px;
+    height: 40px;
+    width: 24px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
