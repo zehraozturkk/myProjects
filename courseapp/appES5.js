@@ -9,9 +9,6 @@ function Course(title, instructor, image){
 
 //UI constructor
 function UI(){
-
-    UI
-
 }
 
 UI.prototype.addCoursetoList = function(course){
